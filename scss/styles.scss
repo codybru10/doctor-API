@@ -1,15 +1,19 @@
 body {
     .back-img {
-    background: url("../../img/background.jpg") fixed;
+    background: url("../../img/background.jpg");
     background-size: cover;
     background-repeat: no-repeat;
     height: 400px;
     text-align: center;
     vertical-align: bottom;
-    text-shadow: 3px 3px 3px grey;
+    text-shadow: 3px 3px 3px gray;
     h1 {
       color: white;
       margin-top: 0;
     }
   }
+}
+
+.unhide, #showDoctors {
+  display: none;
 }

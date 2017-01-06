@@ -7,6 +7,8 @@ $(document).ready(function() {
     var doctorsObject = new Doctor();
     var issue = $('#issue').val();
     doctorsObject.getDoctor(issue);
+    $('.unhide').show();
+    $('#showDoctors').show();
     $('.carousel').carousel();
   });
 });
