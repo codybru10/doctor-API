@@ -8,11 +8,11 @@ Doctor.prototype.getDoctor = function(issue) {
       $('#countDoctors').append("<td>" + issue + "</td>");
       $('#countDoctors').append("<td>" + response.data.length + "</td>");
       response.data.forEach(function(doctor) {
-        console.log(doctor);
+        console.log(doctor.ratings.image_url_small);
         var first = doctor.profile.first_name;
         var last = doctor.profile.last_name;
         var pic = doctor.profile.image_url;
-          $('#showDoctors').append("<p>" + first + " " + last + " " + "<img src='" + pic +"' >" + "</p>");
+        $('#showDoctorsFirst').append("<tr>" + "<td>" + "<img src='" + pic +"' >" + "</td>" + "<td>" + first + "</td>" + "<td>" + last + "</td>" + "</tr>");
       });
     })
 

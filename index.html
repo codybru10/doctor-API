@@ -30,30 +30,39 @@
         </div>
       </form>
 
-      <table class="unhide">
-        <thead>
-          <tr>
-              <th data-field="id">Medical Issue</th>
-              <th data-field="name">Number of Doctors</th>
-          </tr>
-        </thead>
+      <div class="card unhide">
+        <h3>Summary Results</h3>
+        <table>
+          <thead>
+            <tr>
+                <th data-field="id">Medical Issue</th>
+                <th data-field="name">Number of Doctors</th>
+            </tr>
+          </thead>
 
-        <tbody>
-          <tr id="countDoctors">
-          </tr>
-        </tbody>
-      </table>
+          <tbody>
+            <tr id="countDoctors">
+            </tr>
+          </tbody>
+        </table>
+      </div>
 
-      <!-- <div id="showDoctors">
-        <h3>List of Doctors:</h3>
-        <ul></ul>
-      </div> -->
+      <div class="card unhide">
+        <h3>Doctors</h3>
+        <table>
+          <thead>
+            <tr>
+              <th data-field="pic">Picture</th>
+              <th data-field="id">First Name</th>
+              <th data-field="name">Last Name</th>
+            </tr>
+          </thead>
 
-      <div id="showDoctors"  class="row">
-          <div class="col-md-12">
-            <h3>Doctors</h3>
-          </div>
+          <tbody id="showDoctorsFirst">
 
-    </div>
+          </tbody>
+        </table>
+      </div>
+
   </body>
 </html>
