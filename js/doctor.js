@@ -7,8 +7,9 @@ Doctor.prototype.getDoctor = function(issue) {
    .then(function(response) {
       $('#countDoctors').append("<li>" + response.data.length + "</li>");
       response.data.forEach(function(doctor) {
-        var name = doctor.profile.first_name;
-            $('#showDoctors').append("<li>" + name + "</li>");
+        var first = doctor.profile.first_name;
+        var last = doctor.profile.last_name;
+          $('#showDoctors').append("<p>" + first + "</p>");
       });
     })
 

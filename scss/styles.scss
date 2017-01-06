@@ -1,0 +1,15 @@
+body {
+    .back-img {
+    background: url("../../img/background.jpg") fixed;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 400px;
+    text-align: center;
+    vertical-align: bottom;
+    text-shadow: 3px 3px 3px grey;
+    h1 {
+      color: white;
+      margin-top: 0;
+    }
+  }
+}

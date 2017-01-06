@@ -6,7 +6,7 @@ $(document).ready(function() {
     event.preventDefault();
     var doctorsObject = new Doctor();
     var issue = $('#issue').val();
-    $('#condition').text("Your issue is " + issue + ".");
     doctorsObject.getDoctor(issue);
+    $('.carousel').carousel();
   });
 });
